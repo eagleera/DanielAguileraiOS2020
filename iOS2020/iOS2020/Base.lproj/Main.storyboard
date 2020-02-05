@@ -21,7 +21,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="G8r-1g-bz9"/>
                                 </constraints>
-                                <state key="normal" title="Hola bebe te amo">
+                                <state key="normal" title="Convertidor de grados">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -46,30 +46,81 @@
             </objects>
             <point key="canvasLocation" x="833" y="84"/>
         </scene>
-        <!--Primer Practica View Controller-->
+        <!--Temperature Converter View Controller-->
         <scene sceneID="X3C-UC-1De">
             <objects>
-                <viewController id="e9v-3g-IcI" customClass="PrimerPracticaViewController" customModule="iOS2020" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="e9v-3g-IcI" customClass="TemperatureConverterViewController" customModule="iOS2020" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wMt-6Q-uBC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Te extraño" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uqy-T0-JNQ">
-                                <rect key="frame" x="0.0" y="388" width="414" height="48"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="40" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vD0-A9-D3u">
+                                <rect key="frame" x="16" y="139" width="382" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grados Farenheit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RXV-gH-7oS">
+                                <rect key="frame" x="16" y="108" width="382" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9z7-0l-M9F">
+                                <rect key="frame" x="16" y="193" width="382" height="40"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="wK4-wr-qvk"/>
+                                </constraints>
+                                <state key="normal" title="Calcular">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="ConvertToFarenheit:" destination="e9v-3g-IcI" eventType="touchUpInside" id="ed9-Pm-b1E"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XUU-9Z-kZi">
+                                <rect key="frame" x="132" y="424" width="150" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FlD-0y-c56">
+                                <rect key="frame" x="132" y="672" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="N5m-Tw-sm0"/>
+                                    <constraint firstAttribute="height" constant="150" id="nKI-px-7sH"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="uqy-T0-JNQ" firstAttribute="leading" secondItem="Ho4-PQ-uSl" secondAttribute="leading" id="I8Y-nl-gZ2"/>
-                            <constraint firstItem="Ho4-PQ-uSl" firstAttribute="trailing" secondItem="uqy-T0-JNQ" secondAttribute="trailing" id="O2B-3G-7hh"/>
-                            <constraint firstItem="uqy-T0-JNQ" firstAttribute="top" secondItem="Ho4-PQ-uSl" secondAttribute="top" constant="300" id="RYB-z4-kXl"/>
+                            <constraint firstItem="vD0-A9-D3u" firstAttribute="leading" secondItem="RXV-gH-7oS" secondAttribute="leading" id="2wq-U6-yVb"/>
+                            <constraint firstItem="XUU-9Z-kZi" firstAttribute="centerY" secondItem="wMt-6Q-uBC" secondAttribute="centerY" id="5IA-7F-AjU"/>
+                            <constraint firstItem="XUU-9Z-kZi" firstAttribute="centerX" secondItem="wMt-6Q-uBC" secondAttribute="centerX" id="6XB-AB-ap2"/>
+                            <constraint firstItem="9z7-0l-M9F" firstAttribute="leading" secondItem="vD0-A9-D3u" secondAttribute="leading" id="EfE-i5-afR"/>
+                            <constraint firstItem="Ho4-PQ-uSl" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="vD0-A9-D3u" secondAttribute="trailing" symbolic="YES" id="Fcj-TN-aoC"/>
+                            <constraint firstItem="Ho4-PQ-uSl" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9z7-0l-M9F" secondAttribute="trailing" symbolic="YES" id="MAc-nu-KFT"/>
+                            <constraint firstItem="RXV-gH-7oS" firstAttribute="leading" secondItem="Ho4-PQ-uSl" secondAttribute="leading" constant="16" id="Pol-ya-9U4"/>
+                            <constraint firstItem="RXV-gH-7oS" firstAttribute="centerX" secondItem="wMt-6Q-uBC" secondAttribute="centerX" id="TVk-mq-iGd"/>
+                            <constraint firstItem="FlD-0y-c56" firstAttribute="centerX" secondItem="wMt-6Q-uBC" secondAttribute="centerX" id="UOJ-Pm-eIn"/>
+                            <constraint firstItem="9z7-0l-M9F" firstAttribute="top" secondItem="vD0-A9-D3u" secondAttribute="bottom" constant="20" id="UvG-Wc-zLu"/>
+                            <constraint firstItem="vD0-A9-D3u" firstAttribute="top" secondItem="RXV-gH-7oS" secondAttribute="bottom" constant="10" id="V4k-Yl-ozK"/>
+                            <constraint firstItem="FlD-0y-c56" firstAttribute="leading" secondItem="XUU-9Z-kZi" secondAttribute="leading" id="W9l-4J-gfY"/>
+                            <constraint firstItem="Ho4-PQ-uSl" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="RXV-gH-7oS" secondAttribute="trailing" id="eej-HM-9a7"/>
+                            <constraint firstItem="RXV-gH-7oS" firstAttribute="top" secondItem="Ho4-PQ-uSl" secondAttribute="top" constant="20" id="fdg-UY-rgd"/>
+                            <constraint firstItem="Ho4-PQ-uSl" firstAttribute="bottom" secondItem="FlD-0y-c56" secondAttribute="bottom" constant="40" id="tg6-RS-R2t"/>
+                            <constraint firstItem="9z7-0l-M9F" firstAttribute="width" secondItem="vD0-A9-D3u" secondAttribute="width" id="uPg-6f-lvc"/>
+                            <constraint firstItem="vD0-A9-D3u" firstAttribute="width" secondItem="RXV-gH-7oS" secondAttribute="width" id="w12-3n-5vd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ho4-PQ-uSl"/>
                     </view>
                     <navigationItem key="navigationItem" id="czJ-gY-6or"/>
+                    <connections>
+                        <outlet property="CalcularBtn" destination="9z7-0l-M9F" id="aiK-mt-cWs"/>
+                        <outlet property="CelsiusLbl" destination="XUU-9Z-kZi" id="oMm-TB-ULu"/>
+                        <outlet property="FarenheitInput" destination="vD0-A9-D3u" id="RIV-IL-A9d"/>
+                        <outlet property="imageTemp" destination="FlD-0y-c56" id="BFw-83-s4W"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OvT-tG-7vV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

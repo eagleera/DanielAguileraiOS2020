@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		001EB76923E12999004FF08E /* PrimerPracticaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001EB76823E12999004FF08E /* PrimerPracticaViewController.swift */; };
+		001EB76923E12999004FF08E /* TemperatureConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001EB76823E12999004FF08E /* TemperatureConverterViewController.swift */; };
 		00CC4BAB23E11453006F1E4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CC4BAA23E11453006F1E4E /* AppDelegate.swift */; };
 		00CC4BAD23E11453006F1E4E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CC4BAC23E11453006F1E4E /* SceneDelegate.swift */; };
 		00CC4BAF23E11453006F1E4E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CC4BAE23E11453006F1E4E /* MainViewController.swift */; };
@@ -36,7 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		001EB76823E12999004FF08E /* PrimerPracticaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimerPracticaViewController.swift; sourceTree = "<group>"; };
+		001EB76823E12999004FF08E /* TemperatureConverterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureConverterViewController.swift; sourceTree = "<group>"; };
 		00CC4BA723E11453006F1E4E /* iOS2020.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS2020.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00CC4BAA23E11453006F1E4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00CC4BAC23E11453006F1E4E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,7 +108,7 @@
 				00CC4BB323E11454006F1E4E /* Assets.xcassets */,
 				00CC4BB523E11454006F1E4E /* LaunchScreen.storyboard */,
 				00CC4BB823E11454006F1E4E /* Info.plist */,
-				001EB76823E12999004FF08E /* PrimerPracticaViewController.swift */,
+				001EB76823E12999004FF08E /* TemperatureConverterViewController.swift */,
 			);
 			path = iOS2020;
 			sourceTree = "<group>";
@@ -264,7 +264,7 @@
 			files = (
 				00CC4BAF23E11453006F1E4E /* MainViewController.swift in Sources */,
 				00CC4BAB23E11453006F1E4E /* AppDelegate.swift in Sources */,
-				001EB76923E12999004FF08E /* PrimerPracticaViewController.swift in Sources */,
+				001EB76923E12999004FF08E /* TemperatureConverterViewController.swift in Sources */,
 				00CC4BAD23E11453006F1E4E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
